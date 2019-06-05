@@ -1,0 +1,97 @@
+/**app.wxss**/
+
+button {
+  position: relative;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  text-align: center;
+  text-decoration: none;
+  line-height: normal;
+  border-radius: none;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  color: none;
+  background-color: transparent;
+}
+
+button:after {
+  display: none;
+}
+
+text {
+  font-family: 微软雅黑;
+}
+
+.clear {
+  clear: both;
+}
+
+.line {
+  width: 90%;
+  background: #f1f1f1;
+  height: 1px;
+  margin: auto;
+}
+
+.bgline {
+  width: 100%;
+  background: #f1f1f1;
+  height: 20rpx;
+  margin: auto;
+}
+
+.dashed {
+  border-style: dashed;
+  border-width: 1px 0 0 0;
+  margin: 20rpx 0;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title .leftline {
+  width: 5rpx;
+  height: 25rpx;
+  background: #2277d5;
+  display: inline-block;
+  float: left;
+}
+
+.title .title-text {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #333;
+  text-indent: 0.5em;
+  float: left;
+  line-height: 21rpx;
+}
+
+.title .more {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.content {
+  width: 95%;
+  margin: auto;
+  margin-top: 30rpx;
+  background: #fff;
+}
+
+.content .content-title {
+  font-size: 32rpx;
+  color: #363636;
+  text-align: center;
+  line-height: 3;
+  display: block;
+  font-weight: bold;
+  text-indent: 0;
+}

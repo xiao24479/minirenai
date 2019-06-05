@@ -1,0 +1,16 @@
+<template name="dbswtTemplate">
+  <view class="dbswt">
+    <view class="post">
+      <image src='/images/dbswt.png'></image>
+    </view>
+    <view class="abs">
+      <button open-type='contact' hover-class='none'>
+        <text class="foot-chat">在线咨询</text>
+      </button>
+      <text class='foot-tel' catchtap='freeTell'>电话咨询</text>
+      <navigator url="/pages/about/about" navigateTo="true" hover-class='none'>
+        <text class="foot-yuyue">在线预约</text>
+      </navigator>
+    </view>
+  </view>
+</template>

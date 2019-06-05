@@ -1,0 +1,155 @@
+.swtbg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+.swtcenter {
+  background: #fff;
+  width: 500rpx;
+  height: 600rpx;
+  /* margin: -110rpx 0 0 -130rpx; */
+  border-radius: 15rpx;
+  box-shadow: 0 0 20rpx #aaa;
+  font-family: 微软雅黑;
+  position: fixed;
+  _position: absolute;
+  top: 24%;
+  left: 17%;
+  z-index: 20000;
+}
+
+.swtcenter .swtclose {
+  width: 84rpx;
+  height: 84rpx;
+  cursor: pointer;
+  position: absolute;
+  top: -20rpx;
+  right: -20rpx;
+}
+
+.swtcenter .swtclose image {
+  width: 100%;
+  height: 100%;
+}
+
+.swtcenter .h3 {
+  width: 100%;
+  height: 35rpx;
+  margin: 0 auto;
+  padding: 30rpx 0px 0px;
+  text-align: center;
+  font-size: 36rpx;
+  color: #098bc9;
+  overflow: hidden;
+  font-weight: bold;
+  line-height: 30rpx;
+}
+
+.doctor {
+  width: 450rpx;
+  height: 160rpx;
+  float: left;
+  margin: 8rpx 0 0 23rpx;
+  background-color: #adcffe;
+}
+
+.bulletin {
+  width: 180rpx;
+  color: #fff;
+  float: left;
+  height: 140rpx;
+  margin: 10rpx 0 0 30rpx;
+  min-height: 23px;
+  overflow: hidden;
+}
+
+.bulletin image {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+}
+
+.doctor_info {
+  width: 225rpx;
+  height: 150rpx;
+  float: left;
+  margin: 12rpx 0 0 0rpx;
+}
+
+.doctor_info .d_info {
+  width: 100%;
+  float: Left;
+  padding: 12rpx 0 12rpx 0;
+}
+
+.doctor_info .d_border {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+.doctor_info .d_num {
+  width: 45%;
+  float: Left;
+  display: block;
+  height: 20rpx;
+  text-align: center;
+  line-height: 20rpx;
+  font-size: 26rpx;
+  color: #ff7908;
+}
+
+.doctor_info .d_to {
+  width: 55%;
+  float: Left;
+  display: block;
+  height: 20rpx;
+  text-align: center;
+  line-height: 20rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+
+.swtcenter .tc {
+  width: 450rpx;
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  float: left;
+  margin: 40rpx 0 40rpx 23rpx;
+}
+
+.swtcenter .tc text {
+  width: 150rpx;
+  height: 62rpx;
+  line-height: 62rpx;
+  color: #212121;
+  float: left;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  font-size: 30rpx;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.swtcenter .db_btn button {
+  width: 90%;
+  height: 80rpx;
+  margin: auto;
+}
+
+.swtcenter .d_btn {
+  width: 100%;
+  height: 80rpx;
+}
+
+.swtcenter .swt-close {
+  text-align: center;
+  color: #6c747c;
+  font-size: 30rpx;
+  display: block;
+  margin-top: 20rpx;
+}

@@ -1,0 +1,71 @@
+<import src="header/header-template.wxml" />
+<import src="banner/banner-template.wxml" />
+<import src="nav/nav-template.wxml" />
+<import src="diseases/diseases-template.wxml" />
+<import src="footer/footer-template.wxml" />
+<import src="dbswt/dbswt-template.wxml" />
+<import src="swtcenter/swtcenter-template.wxml" />
+<view class="container">
+  <template is="headerTemplate"></template>
+  <template is="bannerTemplate"></template>
+  <template is="navTemplate" data="{{num}}"></template>
+  <view class="line"></view>
+  <template is="diseasesTemplate"></template>
+  <view class="bgline"></view>
+  <view class="dt">
+    <view class="title">
+      <view>
+        <view class="leftline"></view>
+        <text class="title-text">官方动态</text>
+      </view>
+      <text class="more">查看更多></text>
+    </view>
+    <view class="article">
+      <view class="art-item-first">
+        <image src="/images/dt.jpg"></image>
+        <view>
+          <text class="art-title">一直活跃在健康公益服务的前列线。...</text>
+          <text class="reading">89阅读</text>
+          <text class="reading">04月02日 16:04</text>
+        </view>
+      </view>
+      <view class="art-item">
+        <text class="art-title">温州五马医院携手郭公山“红色爱吧”开展关爱</text>
+        <text class="reading">163阅读</text>
+        <text class="reading">04月02日 16:04</text>
+      </view>
+      <view class="art-item">
+        <text class="art-title">温州五马医院“携手抗艾 重在预防”荧光夜跑活</text>
+        <text class="reading">110阅读</text>
+        <text class="reading">04月02日 16:04</text>
+      </view>
+      <view class="art-item">
+        <text class="art-title">温州五马医院志愿者参加“无偿献血 积德行善”</text>
+        <text class="reading">188阅读</text>
+        <text class="reading">04月02日 16:04</text>
+      </view>
+    </view>
+  </view>
+  <view class="bgline"></view>
+  <view class="pinpai">
+    <view class="title">
+      <view>
+        <view class="leftline"></view>
+        <text class="title-text">品牌故事</text>
+      </view>
+      <text class="more">查看更多></text>
+    </view>
+    <view class="story">
+      <text bindtap='aboutTap'>温州五马医院位于著名历史文化商业圈五马街口，创建于2003年，是一所集预防、医疗、保健、康复为一体的现代化综合性医保定点医院，生育保险定点单位。医院先后被授予“全国百姓放心医院”、“浙江省青年志愿者助残先进单位”、...<text class="details">【详情】</text>
+      </text>
+      <image src="/images/yyjj1.png"></image>
+    </view>
+  </view>
+  <view class='bgline'></view>
+  <view class='yyhj'>
+    <image src='/images/yyhj.jpg'></image>
+  </view>
+  <template is="footerTemplate"></template>
+  <template is="dbswtTemplate"></template>
+  <template is="swtcenterTemplate" data="{{swtbgshow, num2, num3, num4}}"></template>
+</view>

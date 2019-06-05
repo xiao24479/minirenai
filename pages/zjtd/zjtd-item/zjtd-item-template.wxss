@@ -1,0 +1,76 @@
+.zjtdItem {
+  border-bottom: 1px solid #f1f1f1;
+  padding: 32rpx 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.zjtd_content {
+  width: 95%;
+  margin: auto;
+  margin-top: 30rpx;
+  background: #fff;
+}
+
+.zjtdItem image {
+  width: 312rpx;
+  height: 320rpx;
+}
+
+.zjtdItem .zjtdContent {
+  float: right;
+  width: 75%;
+}
+
+.zjtdItem .zjtdContent .name {
+  font-size: 40rpx;
+  color: #363636;
+  line-height: 0.8;
+  display: block;
+}
+
+.zjtdItem .zjtdContent .title {
+  font-size: 26rpx;
+  color: #5c5461;
+  margin-top: 16rpx;
+  display: inline-block;
+  margin-left: 10rpx;
+}
+
+.zjtdItem .zjtdContent .better {
+  font-size: 30rpx;
+  color: #929292;
+  margin-top: 20rpx;
+  display: block;
+  margin-bottom: 20rpx;
+}
+
+.zjtdItem .zjtdContent .zjtdBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10rpx;
+}
+
+.zjtdItem .zjtdContent .zjtdBottom .click {
+  font-size: 30rpx;
+  color: #5c5461;
+  display: inline-block;
+  font-weight: bold;
+  align-items: center;
+  margin-top: 10rpx;
+}
+
+.zjtdItem .zjtdContent .zjtdBottom .Cnum {
+  color: #ff9601;
+}
+
+.zjtdItem .zjtdContent .zjtdBottom .zixun {
+  padding: 10rpx 15rpx;
+  color: #5184f7;
+  font-size: 24rpx;
+  border: 1px solid #5184f7;
+  border-radius: 5px;
+  align-items: center;
+}

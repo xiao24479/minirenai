@@ -1,0 +1,95 @@
+@import "header/header-template.wxss";
+@import "banner/banner-template.wxss";
+@import "nav/nav-template.wxss";
+@import "diseases/diseases-template.wxss";
+@import "footer/footer-template.wxss";
+@import "dbswt/dbswt-template.wxss";
+@import "swtcenter/swtcenter-template.wxss";
+
+.container {
+  width: 750rpx;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 750rpx;
+  min-width: 320rpx;
+}
+
+.dt {
+  width: 90%;
+  margin: auto;
+  margin-top: 30rpx;
+}
+
+.dt .article .art-item-first {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+  padding: 30rpx 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.dt .article .art-item {
+  padding: 30rpx 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.dt .article .art-item-first image {
+  width: 300rpx;
+  height: 135rpx;
+  float: left;
+  margin-right: 22rpx;
+}
+
+.dt .article .art-title {
+  font-size: 30rpx;
+  color: #333;
+  display: block;
+}
+
+.dt .article .reading {
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 8rpx;
+  display: inline-block;
+  margin-right: 15rpx;
+}
+
+.pinpai {
+  width: 90%;
+  margin: auto;
+  margin-top: 30rpx;
+}
+
+.pinpai .story {
+  width: 100%;
+  margin: 30rpx 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pinpai .story text {
+  font-size: 26rpx;
+  color: #333;
+  line-height: 1.5;
+  width: 370rpx;
+}
+
+.pinpai .story .details {
+  color: #ffa200;
+}
+
+.pinpai .story image {
+  width: 290rpx;
+  height: 280rpx;
+  float: right;
+  margin-top: 10rpx;
+}
+
+.yyhj {
+  width: 100%;
+}
+
+.yyhj image {
+  width: 100%;
+}

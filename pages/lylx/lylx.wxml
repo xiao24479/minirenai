@@ -1,0 +1,72 @@
+<import src="../index/header/header-template.wxml" />
+<import src="../index/banner/banner-template.wxml" />
+<import src="../index/nav/nav-template.wxml" />
+<import src="../index/footer/footer-template.wxml" />
+<import src="../index/dbswt/dbswt-template.wxml" />
+<import src="../index/swtcenter/swtcenter-template.wxml" />
+<template is="headerTemplate"></template>
+<template is="bannerTemplate"></template>
+<template is="navTemplate" data="{{num}}"></template>
+<view class="bgline"></view>
+<view class="content">
+  <view class="title">
+    <view>
+      <view class="leftline"></view>
+      <text class="title-text">来院路线</text>
+    </view>
+  </view>
+
+  <view class='topTabSwiper'>
+    <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}' data-current="0" bindtap='checkCurrent'>来院地图</view>
+    <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}' data-current="1" bindtap='checkCurrent'>地址电话</view>
+    <view class='tab  {{currentData == 2 ? "tabBorer" : ""}}' data-current="2" bindtap='checkCurrent'>就医流程</view>
+  </view>
+  <swiper current="{{currentData}}" class='swiper' style="height:450px;" duration="300" bindchange="bindchange">
+    <swiper-item>
+      <view class='swiper_con'>
+        <view class="page-section">
+          <map id="myMap" style="width: 100%; height: 300px;" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" covers="{{covers}}" scale="{{scale}}" show-location></map>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='swiper_con'>
+        <view class="guide_title">
+          <text>仁爱地址：</text>
+        </view>
+        <view class="guide_content">
+          <text class="ads_content"><text class="ads_blue">医院地址：</text>福田区沙尾（地铁7号线沙尾站A出口）</text>
+          <text><text class="ads_blue">问询电话：</text>0755-88308080</text>
+        </view>
+        <view class="line"></view>
+        <view class="guide_title">
+          <text>地铁路线：</text>
+        </view>
+        <view class="guide_content">
+          <text class="ads_content">1、地铁7号线沙尾站A出口 右转100米即到</text>
+          <text>2、地铁3号线益田站B出口，再换26路仁爱医院站下车即可</text>
+        </view>
+        <view class="guide_title">
+          <text>公交路线：</text>
+        </view>
+        <view class="guide_content">
+          <text class="ads_content"><text class="ads_blue">仁爱医院站：</text>26路、47路、63路、103A路、103B路、367路</text>
+          <view class="dashed"></view>
+          <text><text class="ads_blue">新洲站、沙尾站：</text>33路、44路、71路、76路、80路、121路、202路、241路、303路、305路、312路、317路、322路、339路、364路、369路、372路、377路、J2路、N10路</text>
+          <view class="dashed"></view>
+          <text><text class="ads_blue">金地花园站：</text>65路、215路、362路、374路</text>
+        </view>
+        <view class="line"></view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='swiper_con'>
+        <image src="/images/process.jpg"></image>
+      </view>
+    </swiper-item>
+  </swiper>
+
+</view>
+<template is="footerTemplate"></template>
+<template is="dbswtTemplate"></template>
+<template is="swtcenterTemplate" data="{{swtbgshow, num2, num3, num4}}"></template>

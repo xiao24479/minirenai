@@ -1,0 +1,36 @@
+.diseases-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 5% auto;
+}
+
+.diseases-container .diseases-first {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.diseases-container .diseases-last {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+
+.diseases-container .diseases-item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.diseases-container image {
+  width: 80rpx;
+  height: 50rpx;
+}
+
+.diseases-container text {
+  font-size: 24rpx;
+  color:#666;
+  margin-top: 10%;
+}

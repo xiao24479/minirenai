@@ -1,0 +1,29 @@
+<import src="../index/header/header-template.wxml" />
+<import src="../index/banner/banner-template.wxml" />
+<import src="../index/nav/nav-template.wxml" />
+<import src="../index/footer/footer-template.wxml" />
+<import src="../index/dbswt/dbswt-template.wxml" />
+<import src="../index/swtcenter/swtcenter-template.wxml" />
+<import src="zjtd-item/zjtd-item-template.wxml" />
+<template is="headerTemplate"></template>
+<template is="bannerTemplate"></template>
+<template is="navTemplate" data="{{num}}"></template>
+<view class="bgline"></view>
+<view class="zjtd_content">
+  <view class="title">
+    <view>
+      <view class="leftline"></view>
+      <text class="title-text">专家团队</text>
+    </view>
+  </view>
+  <view class='zjtd'>
+    <block wx:for="{{postList}}" wx:for-item="item" wx:for-index="idx" wx:key="key">
+      <view>
+        <template is="zjtdTemplate" data="{{...item}}"></template>
+      </view>
+    </block>
+  </view>
+</view>
+<template is="footerTemplate"></template>
+<template is="dbswtTemplate"></template>
+<template is="swtcenterTemplate" data="{{swtbgshow, num2, num3, num4}}"></template>

@@ -1,0 +1,21 @@
+@import "../index/header/header-template.wxss";
+@import "../index/banner/banner-template.wxss";
+@import "../index/nav/nav-template.wxss";
+@import "../index/footer/footer-template.wxss";
+@import "../index/dbswt/dbswt-template.wxss";
+@import "../index/swtcenter/swtcenter-template.wxss";
+
+.content text {
+  font-size: 30rpx;
+  color: #363636;
+  line-height: 1.5;
+  margin-bottom: 30rpx;
+  text-indent: 2em;
+  display: block;
+}
+
+.content image {
+  width: 98%;
+  display: block;
+  margin-bottom: 30rpx;
+}

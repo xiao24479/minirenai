@@ -1,0 +1,58 @@
+<template name="swtcenterTemplate">
+  <view class="swtbg" wx:if="{{swtbgshow}}">
+    <view class="swtcenter">
+      <view catchtap='swtCenterClose' class="swtclose">
+        <image src='/images/swtclose.png'></image>
+      </view>
+      <view class='h3'>深圳仁爱医院</view>
+      <view class="doctor">
+        <view class="bulletin">
+          <swiper catchtap="onSwiperTap" indicator-dots="{{false}}" circular="{{true}}" autoplay="{{true}}" interval="2000">
+            <swiper-item>
+              <image src="/images/doctor1.jpg"></image>
+            </swiper-item>
+            <swiper-item>
+              <image src="/images/doctor2.jpg"></image>
+            </swiper-item>
+            <swiper-item>
+              <image src="/images/doctor3.jpg"></image>
+            </swiper-item>
+          </swiper>
+        </view>
+        <view class="doctor_info">
+          <view class="d_info">
+            <text class="d_num">{{num2}}</text>
+            <text class="d_to">已解答</text>
+          </view>
+          <view class="d_info d_border">
+            <text class="d_num">{{num3}}</text>
+            <text class="d_to">已j解决</text>
+          </view>
+          <view class="d_info">
+            <text class="d_num">{{num4}}</text>
+            <text class="d_to">剩余名额</text>
+          </view>
+        </view>
+      </view>
+      <view class="clear"></view>
+      <button open-type='contact' hover-class='none'>
+      <view class="tc">
+        <view>
+          <text>妇科炎症</text>
+          <text>月经疾病</text>
+          <text>健康人流</text> 
+        </view>
+        <view>
+          <text>四维彩超</text>
+          <text>温馨产科</text> 
+          <text>女性不孕</text>
+        </view>
+      </view>
+      </button>
+      <view class="db_btn">
+      <button open-type='contact' hover-class='none'><image class="d_btn" src='/images/zxbutton.gif'></image></button>
+      </view>
+      <text catchtap='swtCenterClose' class="swt-close">先看一下，等会再说</text>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,8 @@
+<template name="headerTemplate">
+  <view class="header-container">
+     <image src="/images/logo.jpg"></image>
+     <view class="logo"><button open-type="contact" hover-class='none'></button></view>
+     <view class="tel" catchtap='freeTell'>
+     </view>
+  </view>
+</template>

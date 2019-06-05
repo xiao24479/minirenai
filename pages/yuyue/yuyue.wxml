@@ -1,0 +1,48 @@
+<!--pages/onlineorder/onlineorder.wxml-->
+<import src="../index/dbswt/dbswt-template.wxml" />
+<import src="../index/swtcenter/swtcenter-template.wxml" />
+<view class='page'>
+  <image class="img" src="http://weixin.ra120.com/yuyue/images/banner.jpg" alt="" />
+  <view class="reg">
+    <view>
+      <view>我的挂号
+        <text class="fr"></text>
+
+      </view>
+      <view catchtap='goMap'>医院地址 | 深圳福田沙尾金地四路2号
+        <text class="fr"></text>
+      </view>
+      <view catchtap='Calling'>联系电话 | 0755-88308000
+        <text class="fr">></text>
+      </view>
+    </view>
+  </view>
+  <form bindsubmit='formSubmit'>
+    <view class="form">
+      <view class="input">
+        <view>请认真填写表单</view>
+        <text>真实姓名</text>
+        <input type="text" name="name" placeholder="输入您的姓名" value="{{name}}" />
+        <text>联系电话</text>
+        <input type="text" name="phone" placeholder="请输入您的联系方式" value="{{phone}}" />
+        <text>病情描述</text>
+        <textarea name="desc" class="area" value="{{desc}}"></textarea>
+        <view style="width: 100%; height: 1rem; background:#fff; border-radius:20px;"></view>
+      </view>
+      <button form-type='submit'>提交预约</button>
+    </view>
+  </form>
+  <view class='txt'>
+    <text class='title'>预约须知：</text>
+    <view class='content'>
+      <text class='num'>1</text>
+      <text class='text'>微信预约优先就诊，节省排队时间。</text>
+    </view>
+    <view class='content'>
+      <text class='num'>2</text>
+      <text class='text'>提交预约，5-10分钟左右客服将会给您电话回访确认预约详细内容。</text>
+    </view>
+  </view>
+  <template is="dbswtTemplate"></template>
+  <template is="swtcenterTemplate" data="{{swtbgshow, num2, num3, num4}}"></template>
+</view>

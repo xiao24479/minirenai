@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/gfdt/gfdt",
+    "pages/gfdt/gfdt-detail/gfdt-detail",
+    "pages/yuyue/yuyue",
+    "pages/zjtd/zjtd",
+    "pages/about/about",
+    "pages/lylx/lylx",
+    "pages/yyhj/yyhj"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "深圳仁爱医院",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

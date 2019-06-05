@@ -1,0 +1,42 @@
+<import src="../index/header/header-template.wxml" />
+<import src="../index/banner/banner-template.wxml" />
+<import src="../index/nav/nav-template.wxml" />
+<import src="../index/footer/footer-template.wxml" />
+<import src="../index/dbswt/dbswt-template.wxml" />
+<import src="../index/swtcenter/swtcenter-template.wxml" />
+<template is="headerTemplate"></template>
+<template is="bannerTemplate"></template>
+<template is="navTemplate" data="{{num}}"></template>
+<view class="bgline"></view>
+<view class="content">
+  <view class="title">
+    <view>
+      <view class="leftline"></view>
+      <text class="title-text">官方动态</text>
+    </view>
+  </view>
+  <view class="gfdtlist">
+    <view catchtap='ondtTap' class="gfdtlist_content">
+      <text class="hot">热</text>
+      <text class="list_title">温州五马医院参加温州市第五届社工文化</text>
+      <view class="clear"></view>
+      <text class="list_desc">一直活跃在健康公益服务的前列线。...</text>
+      <view class="clicktime">
+        <text class='list_click'>89阅读</text>
+        <text class='list_time'>04月02日 16:04</text>
+      </view>
+    </view>
+    <view catchtap='ondtTap' class="gfdtlist_content">
+      <text class="list_title">温州五马医院参加温州市第五届社工文化</text>
+      <view class="clear"></view>
+      <text class="list_desc">一直活跃在健康公益服务的前列线。...</text>
+      <view class="clicktime">
+        <text class='list_click'>89阅读</text>
+        <text class='list_time'>04月02日 16:04</text>
+      </view>
+    </view>
+  </view>
+</view>
+<template is="footerTemplate"></template>
+<template is="dbswtTemplate"></template>
+<template is="swtcenterTemplate" data="{{swtbgshow, num2, num3, num4}}"></template>

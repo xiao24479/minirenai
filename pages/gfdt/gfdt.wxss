@@ -1,0 +1,53 @@
+@import "../index/header/header-template.wxss";
+@import "../index/banner/banner-template.wxss";
+@import "../index/nav/nav-template.wxss";
+@import "../index/footer/footer-template.wxss";
+@import "../index/dbswt/dbswt-template.wxss";
+@import "../index/swtcenter/swtcenter-template.wxss";
+
+.gfdtlist {
+  margin-top: 30rpx;
+}
+
+.gfdtlist .gfdtlist_content {
+  border-bottom: 1px solid #f1f1f1;
+  padding: 32rpx 0;
+}
+
+.gfdtlist .gfdtlist_content .hot {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 5rpx;
+  background: #ed7263;
+  color: #fff;
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 30rpx;
+  float: left;
+  font-weight: bold;
+  margin-right: 10rpx;
+}
+
+.gfdtlist .gfdtlist_content .list_title {
+  display: inline-block;
+  font-size: 34rpx;
+  color: #333;
+  float: left;
+  line-height: 1.2;
+}
+
+.gfdtlist .gfdtlist_content .list_desc {
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.5;
+  margin: 10rpx 0;
+}
+
+.gfdtlist .gfdtlist_content .clicktime {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 26rpx;
+  color: #999;
+  margin-top: 12rpx;
+}

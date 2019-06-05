@@ -1,0 +1,11 @@
+<template name="bannerTemplate">
+  <view>
+    <swiper class="banner" indicator-dots="{{true}}" indicator-color="#fff" circular="{{true}}" autoplay="{{true}}" indicator-dots="{{false}}" interval="2000">
+      <swiper-item>
+        <button open-type="contact" hover-class='none'>
+          <image src="/images/banner.jpg"></image>
+        </button>
+      </swiper-item>
+    </swiper>
+  </view>
+</template>

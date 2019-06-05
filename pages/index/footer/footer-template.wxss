@@ -1,0 +1,26 @@
+.footer-container {
+  width: 100%;
+  background: #f1f1f1;
+  padding: 25rpx 25rpx;
+  padding-bottom: 20%;
+  max-width: 750rpx;
+}
+
+.footer-container .footer-top {
+  display: flex;
+  flex-direction: row;
+}
+.footer-container .footer-top .times{
+  margin-right: 3%;
+}
+.footer-container image {
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+
+.footer-container text {
+  font-size: 24rpx;
+  color: #737373;
+}
