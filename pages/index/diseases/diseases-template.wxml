@@ -3,25 +3,25 @@
     <view class="diseases-first">
       <button open-type="contact" hover-class='none'>
         <view class="diseases-item">
-          <image src='/images/d1.jpg'></image>
+          <image src='http://ai.ra120.com/resource/mini-program/renai/images/d1.jpg'></image>
           <text>月经疾病</text>
         </view>
       </button>
       <button open-type="contact" hover-class='none'>
         <view class="diseases-item">
-          <image src='/images/d2.jpg'></image>
+          <image src='http://ai.ra120.com/resource/mini-program/renai/images/d2.jpg'></image>
           <text>妇科炎症</text>
         </view>
       </button>
       <button open-type="contact" hover-class='none'>
         <view class="diseases-item">
-          <image src='/images/d3.jpg'></image>
+          <image src='http://ai.ra120.com/resource/mini-program/renai/images/d3.jpg'></image>
           <text>妇科肿瘤</text>
         </view>
       </button>
       <button open-type="contact" hover-class='none'>
         <view class="diseases-item">
-          <image src='/images/d4.jpg'></image>
+          <image src='http://ai.ra120.com/resource/mini-program/renai/images/d4.jpg'></image>
           <text>健康人流</text>
         </view>
       </button>
@@ -29,25 +29,25 @@
     <view class="diseases-last">
       <button open-type="contact" hover-class='none'>
         <view class="diseases-item">
-          <image src='/images/d5.jpg'></image>
+          <image src='http://ai.ra120.com/resource/mini-program/renai/images/d5.jpg'></image>
           <text>女性不育</text>
         </view>
       </button>
       <button open-type="contact" hover-class='none'>
         <view class="diseases-item">
-          <image src='/images/d6.jpg'></image>
+          <image src='http://ai.ra120.com/resource/mini-program/renai/images/d6.jpg'></image>
           <text>私密整形</text>
         </view>
       </button>
       <button open-type="contact" hover-class='none'>
         <view class="diseases-item">
-          <image src='/images/d7.jpg'></image>
+          <image src='http://ai.ra120.com/resource/mini-program/renai/images/d7.jpg'></image>
           <text>四维彩超</text>
         </view>
       </button>
       <button open-type="contact" hover-class='none'>
         <view class="diseases-item">
-          <image src='/images/d8.jpg'></image>
+          <image src='http://ai.ra120.com/resource/mini-program/renai/images/d8.jpg'></image>
           <text>温馨产科</text>
         </view>
       </button>

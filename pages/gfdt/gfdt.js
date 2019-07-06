@@ -1,78 +1,87 @@
+import { News } from 'news-model.js';
+import { Common } from '../../utils/common.js';
+var common = new Common;
+var news = new News;
+
 Page({
 
   data: {
-    num: 7,
-    num2: 1023,
-    num3: 924,
-    num4: 8,
-    swtbgshow: false
+    news: [],
+    showPop: common.showPop
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this
-
-    that.dtnum();
-
-    setTimeout(function () {
-      that.onlinein()
-    }, 20000)
-
-    setInterval(function () {
-      that.randomNum()
-    }, 2500)
-  },
-  aboutTap: function () {
-    wx.navigateTo({
-      url: '../about/about',
-    })
-  },
-  freeTell: function () {
-    wx.makePhoneCall({
-      phoneNumber: '0577-88308080',
-    })
+    this._loadData();
+    this._loadPop();
   },
 
-  onlinein: function () {
-    this.setData({
-      swtbgshow: true
-    })
-  },
 
-  dtnum: function () {
-    var random = Math.floor(Math.random() * 10);
-    this.setData({
-      num: random
-    })
-  },
+  /*加载所有数据*/
+  _loadData: function (callback) {
 
-  randomNum: function () {
-    var that = this
-    var random2 = Math.floor(Math.random() * 100 + 1000);
-    var random3 = Math.floor(Math.random() * 100 + 900)
-    var random4 = Math.floor(Math.random() * 10)
-    that.setData({
-      num2: random2,
-      num3: random3,
-      num4: random4
-    })
-  },
-  swtCenterClose: function () {
-    var that = this
-    this.setData({
-      swtbgshow: false
-    })
-    var autoTimer = setTimeout(function () {
+    var that = this;
+
+    // 获取新闻列表
+    news.getNewsList((res) => {
       that.setData({
-        swtbgshow: true
+        news: res.data,
+      });
+    });
+
+  },
+
+  //加载弹窗
+  _loadPop: function () {
+
+    //医院动态badge
+    common.dtnum((random) => {
+      this.setData({
+        num: random
       })
-    }, 25000)
-  },
-  ondtTap: function (event) {
-    wx.navigateTo({
-      url: "gfdt-detail/gfdt-detail"
     })
+
+    //弹窗显示
+    common.onlinein((on) => {
+      this.setData({
+        showPop: on
+      })
+    })
+
+    //弹窗随机数字
+    common.randomNum((random2, random3, random4) => {
+      this.setData({
+        num2: random2,
+        num3: random3,
+        num4: random4
+      })
+    })
+
   },
+
+  //医院关于
+  aboutTap: function () {
+    common.aboutTap();
+  },
+
+  //号码
+  freeTell: function () {
+    common.freeTell();
+  },
+
+  //关闭弹窗
+  swtCenterClose: function () {
+    common.swtCenterClose((off) => {
+      this.setData({
+        showPop: off
+      })
+    }, (on) => {
+      this.setData({
+        showPop: on
+      })
+    })
+  }
+
 })

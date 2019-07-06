@@ -55,6 +55,11 @@ text {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: visible;
+}
+
+.title-box{
+  overflow: visible;
 }
 
 .title .leftline {
@@ -84,6 +89,7 @@ text {
   margin: auto;
   margin-top: 30rpx;
   background: #fff;
+  overflow: visible;
 }
 
 .content .content-title {

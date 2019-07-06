@@ -17,20 +17,20 @@
   </view>
   <text class="content-title">— 关于仁爱 —</text>
   <text>深圳仁爱医院是于1997年经深圳市卫生局批准设立的现代化综合性医院，1998年12月4日，全国人大常委会副委员长、著名医学专家吴阶平教授亲临视察，为“深圳仁爱医院”题写院名。</text>
-  <image src='/images/yyjj1.png'></image>
+  <image src='http://ai.ra120.com/resource/mini-program/renai/images/about1.jpg'></image>
   <text>深圳仁爱医院是经深圳市社会保险基金管理局批准的医保定点医疗机构、市120急救中心网络医院、母婴保健技术服务执行许可机构、中国妇产科联盟会员单位。</text>
   <text>医院连续多年被评为深圳市医疗质量A级单位，并先后升级成为中山泌尿外科医联体成员单位、深圳北大医院产前诊断合作单位、香港东方妇科精准医疗研究院指定医疗服务机构。</text>
   <text class="content-title">— 医院规模 —</text>
   <text>医院按照“大专科、小综合”的管理思路，设有微创妇科、精品产科、不孕不育专科、泌尿科、肛肠科、胃肠专科、耳鼻喉科、放射科、检验科、超声科、急诊科、内科、外科、儿科等多个临床和医技科室，满足了客户多样化的就诊需求。</text>
-  <image src="/images/yyjj2.png"></image>
+  <image src="http://ai.ra120.com/resource/mini-program/renai/images/about2.jpg"></image>
   <text class="content-title">— 品牌科室 —</text>
   <text>仁爱微创妇科是医院的重点特色专科，医院在妇产科疾病诊疗方面具有较强的实力，尤其治疗不孕不育、子宫肌瘤、盆底重建、卵巢肿瘤等疾病都处在领先地位。微创手术占妇科手术的95%，产科顺产率达80％以上，并广泛开展阴式微创术，技术含金量较高。</text>
   <text>仁爱精品产科，为孕产妇提供高质量的产前、产时及产后一条龙服务，满足了准妈妈“一站式孕产”的需求。科室鼓励自然分娩，推行母乳喂养，建立了国际标准的“无痛分娩”、“无创分娩”服务体系，保障母婴安全。</text>
-  <image src="/images/yyjj3.png"></image>
+  <image src="http://ai.ra120.com/resource/mini-program/renai/images/about3.jpg"></image>
   <text class="content-title">— 核心理念 —</text>
   <text>“以医疗为本”是仁爱的办院宗旨，我们重视回归医疗的深切本质，以医疗品质为核心，将“人文、神圣、帮助”融入到医疗行为中。</text>
   <text>仁爱强调行医不唯利，避免在追求经济利益的过程中，丧失了医院的基本功能和人性温度。为此，医院始终保持人文化的管理理念，坚持与时俱进的管理模式，让医护人员心底责任的担当和善良的光辉，闪耀进对待患者的每一个医疗护理环节。</text>
 </view>
 <template is="footerTemplate"></template>
 <template is="dbswtTemplate"></template>
-<template is="swtcenterTemplate" data="{{swtbgshow, num2, num3, num4}}"></template>
+<template is="swtcenterTemplate" data="{{showPop, num2, num3, num4}}"></template>

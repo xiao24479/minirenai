@@ -2,7 +2,7 @@
 <import src="../index/dbswt/dbswt-template.wxml" />
 <import src="../index/swtcenter/swtcenter-template.wxml" />
 <view class='page'>
-  <image class="img" src="http://weixin.ra120.com/yuyue/images/banner.jpg" alt="" />
+  <image class="img" src="http://ai.ra120.com/resource/mini-program/renai/images/banner_yy.jpg" alt="" />
   <view class="reg">
     <view>
       <view>我的挂号
@@ -44,5 +44,5 @@
     </view>
   </view>
   <template is="dbswtTemplate"></template>
-  <template is="swtcenterTemplate" data="{{swtbgshow, num2, num3, num4}}"></template>
+  <template is="swtcenterTemplate" data="{{showPop, num2, num3, num4}}"></template>
 </view>

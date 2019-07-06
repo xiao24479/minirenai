@@ -1,3 +1,4 @@
+@import "/wxParse/wxParse.wxss";
 @import "../../index/header/header-template.wxss";
 @import "../../index/banner/banner-template.wxss";
 @import "../../index/nav/nav-template.wxss";

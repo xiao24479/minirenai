@@ -1,47 +1,78 @@
 .dbswt {
   position: fixed;
-  max-width: 750rpx;
   bottom: 0;
   width: 100%;
   height: 155rpx;
   z-index: 999;
 }
 
-.dbswt image {
+.dbswt .post image {
+  display: block;
   width: 100%;
   height: 155rpx;
-  z-index: -1;
 }
 
 .dbswt .post {
   position: relative;
 }
 
-.dbswt .abs {
+.chat-box{
   position: absolute;
-  bottom: 20rpx;
-  left: 100rpx;
+  top: 90rpx;
+  left: 80rpx;
 }
 
-.dbswt .abs text {
+.dbswt .chat {
+  display: flex;
+  align-items: center;
+}
+
+.dbswt .chat image {
+  display: inline-block;
+  width: 37rpx;
+  height: 37rpx;
+}
+
+.dbswt .chat .foot-chat {
+  margin-left: 10rpx;
   font-size: 26rpx;
   color:#fff;
 }
 
-.dbswt .abs button {
-  float:left;
-  margin-right: 100rpx;
-  margin-top: 5rpx;
+
+.dbswt .foot-tel {
+  position: absolute;
+  padding: 90rpx 45rpx 20rpx;
+  top: 10rpx;
+  left: 280rpx;
+  font-size: 26rpx;
+  color:#fff;
 }
 
-.dbswt .abs .foot-tel {
+.dbswt navigator {
   float: left;
-  margin-top: 20rpx;
-  margin-left: 20rpx;
-}
-
-.dbswt .abs navigator {
-  float: left;
-  margin-left: 165rpx;
   line-height: 40rpx;
+}
+
+.order-box{
+  position: absolute;
+  top: 90rpx;
+  right: 80rpx;
+}
+
+.dbswt .order {
+  display: flex;
+  align-items: center;
+}
+
+.dbswt .order image {
+  display: inline-block;
+  width: 37rpx;
+  height: 37rpx;
+}
+
+.dbswt .order .foot-order {
+  margin-left: 10rpx;
+  font-size: 26rpx;
+  color:#fff;
 }

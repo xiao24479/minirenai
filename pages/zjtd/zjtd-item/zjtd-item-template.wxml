@@ -1,12 +1,12 @@
 <template name="zjtdTemplate">
   <view class="zjtdItem">
-    <image src="{{imgUrl}}"></image>
+    <image src="{{pic}}"></image>
     <view class="zjtdContent">
-      <text class='name'>{{name}}<text class='title'>{{title}}</text></text>
-      <text class="better">{{better}}...</text>
+      <text class='name'>{{name}}<text class='title'>{{job}}</text></text>
+      <text class="better">{{skill}}...</text>
       <view class="zjtdBottom">
-        <text class="click">已咨询<text class="Cnum">{{click}}</text>人</text>
-        <text class="zixun">在线咨询</text>
+        <text class="click">已咨询<text class="Cnum">{{doc_order}}</text>人</text>
+        <button open-type="contact" hover-class='none' class="zixun">在线咨询</button>
       </view>
     </view>
   </view>

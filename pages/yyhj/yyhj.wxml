@@ -16,12 +16,12 @@
     </view>
   </view>
   <text>位于广东省深圳市福田区福强路，交通便利。院内四季花木繁茂，空气清新宜人。24小时保安监控管理，安全舒适。院内并设有舒适的候诊区、诊断室、输液室及设施齐全和干净整洁的病房，为患者提供了舒适安全的就医环境。</text>
-  <image src='/images/yyhj1.jpg'></image>
+  <image src='http://ai.ra120.com/resource/mini-program/renai/images/yyhj1.jpg'></image>
   <text>现有医疗用房面积近1.5万平米，开放床位120余张。为持续提升医疗品质，最新升级德国第三代STORZ宫腹腔镜设备，并先后引进美国GE全身螺旋CT机、韩国三星WS80A四维彩超、日本Olympus电子胃镜、钼靶数字乳腺机等大型医疗诊断仪器设备，可满足一线临床医疗、诊断和科研需要，为市民提供了一流诊疗设备和就诊环境。</text>
-  <image src='/images/yyhj2.jpg'></image>
+  <image src='http://ai.ra120.com/resource/mini-program/renai/images/yyhj2.jpg'></image>
   <text>仁爱坚持优质高效的医疗服务 ——“仁”性化亲情诊疗服务，建立了完善的服务体系。把患者当亲人，从细节入手帮助病人缓解就医的无所适从。</text>
   <text>推行“一医一患一诊室”的诊疗模式，拉近医患距离，做好解释沟通，为患者营造安全、舒适、私密的就医环境，让患者感受到如同家一般的温暖。</text>
 </view>
 <template is="footerTemplate"></template>
 <template is="dbswtTemplate"></template>
-<template is="swtcenterTemplate" data="{{swtbgshow, num2, num3, num4}}"></template>
+<template is="swtcenterTemplate" data="{{showPop, num2, num3, num4}}"></template>

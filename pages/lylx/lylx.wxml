@@ -61,7 +61,7 @@
     </swiper-item>
     <swiper-item>
       <view class='swiper_con'>
-        <image src="/images/process.jpg"></image>
+        <image src="http://ai.ra120.com/resource/mini-program/renai/images/process.jpg"></image>
       </view>
     </swiper-item>
   </swiper>
@@ -69,4 +69,4 @@
 </view>
 <template is="footerTemplate"></template>
 <template is="dbswtTemplate"></template>
-<template is="swtcenterTemplate" data="{{swtbgshow, num2, num3, num4}}"></template>
+<template is="swtcenterTemplate" data="{{showPop, num2, num3, num4}}"></template>

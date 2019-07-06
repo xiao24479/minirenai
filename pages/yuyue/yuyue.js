@@ -1,12 +1,15 @@
-var util = require("../../util/util.js");
+var util = require("../../utils/util.js");
+
+import { Order } from 'order-model.js';
+import { Common } from '../../utils/common.js';
+
+var common = new Common;
+var order = new Order;
+
 Page({
 
   data: {
-    num: 7,
-    num2: 1023,
-    num3: 924,
-    num4: 8,
-    swtbgshow: false,
+    showPop: common.showPop,
     array: ['请选择', '计划生育', '宫颈疾病', '妇科炎症', '肌瘤囊肿', '妇科整形', '妇科检查', '不孕不育', '产科', '男科', '胃肠科', '其他',],
     index: 0,
     isshow: false
@@ -16,106 +19,87 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this
-
-    that.dtnum();
-
-    setTimeout(function () {
-      that.onlinein()
-    }, 20000)
-
-    setInterval(function () {
-      that.randomNum()
-    }, 2500)
-  },
-  aboutTap: function () {
-    wx.navigateTo({
-      url: '../about/about',
-    })
-  },
-  freeTell: function () {
-    wx.makePhoneCall({
-      phoneNumber: '0577-88308080',
-    })
+    this._loadPop();
   },
 
-  onlinein: function () {
-    this.setData({
-      swtbgshow: true
-    })
-  },
 
-  dtnum: function () {
-    var random = Math.floor(Math.random() * 10);
-    this.setData({
-      num: random
-    })
-  },
+  //加载弹窗
+  _loadPop: function () {
 
-  randomNum: function () {
-    var that = this
-    var random2 = Math.floor(Math.random() * 100 + 1000);
-    var random3 = Math.floor(Math.random() * 100 + 900)
-    var random4 = Math.floor(Math.random() * 10)
-    that.setData({
-      num2: random2,
-      num3: random3,
-      num4: random4
-    })
-  },
-  swtCenterClose: function () {
-    var that = this
-    this.setData({
-      swtbgshow: false
-    })
-    var autoTimer = setTimeout(function () {
-      that.setData({
-        swtbgshow: true
+    //医院动态badge
+    common.dtnum((random) => {
+      this.setData({
+        num: random
       })
-    }, 25000)
+    })
+
+    //弹窗显示
+    common.onlinein((on) => {
+      this.setData({
+        showPop: on
+      })
+    })
+
+    //弹窗随机数字
+    common.randomNum((random2, random3, random4) => {
+      this.setData({
+        num2: random2,
+        num3: random3,
+        num4: random4
+      })
+    })
+
   },
+
+  //医院关于
+  aboutTap: function () {
+    common.aboutTap();
+  },
+
+  //号码
+  freeTell: function () {
+    common.freeTell();
+  },
+
+  //关闭弹窗
+  swtCenterClose: function () {
+    common.swtCenterClose((off) => {
+      this.setData({
+        showPop: off
+      })
+    }, (on) => {
+      this.setData({
+        showPop: on
+      })
+    })
+  },
+
+  //表单提交到小程序后台
   formSubmit: function (e) {
-    var that = this;
-    var name = e.detail.value.name;
-    var phone = e.detail.value.phone;
-    var desc = e.detail.value.desc;
+    var objVal = e.detail.value;
+    var name = objVal.name;
+    var phone = objVal.phone;
+    var desc = objVal.desc;
     if (name != '' && phone != '' && desc != '') {
-
-      wx.request({
-        url: 'https://ai.ra120.com/chat/main.php?m=form_order&a=form_action&j=1',
-        header: {
-          "Content-Type": "application/json"
-        },
-        data: {
-          vistor_name: name,
-          vistor_id: 0,
-          phone: phone,
-          hid: 105,
-          account: desc
-        },
-        method: 'GET',
-        success: function (res) {
-          console.info(res);
-          if (res.data.message == 1) {
-            wx.showToast({
-              title: '预约成功',
-              icon: 'success',
-            })
-            that.setData({
-
-              name: '',
-              phone: '',
-              desc: ''
-
-            })
-          } else {
-            wx.showModal({
-              title: '提示',
-              content: res.data.content,
-              showCancel: false,
-            })
-          }
-        },
+      order.pushOrder(e.detail.value,(res)=>{
+        console.info(res);
+        if (res.errno == 0) {
+          wx.showToast({
+            title: '预约成功',
+            icon: 'success',
+          })
+          this.setData({
+            name: '',
+            phone: '',
+            desc: ''
+          })
+        } else {
+          wx.showModal({
+            title: '提示',
+            content: res.msg,
+            showCancel: false,
+          })
+        }
       })
     } else {
       wx.showModal({

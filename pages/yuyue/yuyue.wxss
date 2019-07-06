@@ -32,8 +32,8 @@ view{border-collapse:collapse;border-spacing:0}
 .reg view view{font-size:14px;border-bottom:1px solid #dcdcdc;color:#393939;line-height:2.5rem}
 .reg view view:last-child{border-bottom: none;}
 .reg view view:nth-child(1){text-indent:1em}
-.reg view view:nth-child(2){text-indent:2.5em;background:url(http://weixin.ra120.com/yuyue/images/adds.jpg) no-repeat left;background-size:.9rem 1rem;background-position:.75rem}
-.reg view view:nth-child(3){text-indent:2.5em;background:url(http://weixin.ra120.com/yuyue/images/tel.jpg) no-repeat left;background-size:.9rem 1rem;background-position:.75rem}
+.reg view view:nth-child(2){text-indent:2.5em;background:url(http://ai.ra120.com/resource/mini-program/renai/images/adds.jpg) no-repeat left;background-size:.9rem 1rem;background-position:.75rem}
+.reg view view:nth-child(3){text-indent:2.5em;background:url(http://ai.ra120.com/resource/mini-program/renai/images/tel1.jpg) no-repeat left;background-size:.9rem 1rem;background-position:.75rem}
 .reg view view b{width:1.5rem;height:1rem;display:block;background:#f28202;font-size:.45rem;color:#fff;line-height:1rem;text-align:center;float:right;text-indent:0;margin-top:.75rem;border-radius:20px}
 .reg view view span{text-indent:.5em;margin-right:2%;font-weight:900}
 .form{width:95%;height:auto;margin:auto;margin-bottom:1rem}

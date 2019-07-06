@@ -2,16 +2,16 @@
   <view class="footer-container">
     <view class="footer-top">
       <view class="times">
-        <image src="/images/times.jpg"></image>
+        <image src="http://ai.ra120.com/resource/mini-program/renai/images/times.jpg"></image>
         <text>门诊时间：8:00-22:00</text>
       </view>
       <view>
-        <image src="/images/tel.jpg"></image>
-        <text>咨询热线: 0577-56552728</text>
+        <image src="http://ai.ra120.com/resource/mini-program/renai/images/tel.jpg"></image>
+        <text>咨询热线: 0755-88308080</text>
       </view>
     </view>
     <view>
-      <image src='/images/ads.jpg'></image>
+      <image src='http://ai.ra120.com/resource/mini-program/renai/images/ads.jpg'></image>
       <text>医院地址：深圳市福田区福强路（地铁7号线沙尾站A出口）</text>
     </view>
   </view>

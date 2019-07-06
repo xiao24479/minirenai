@@ -3,25 +3,25 @@
     <view class='nav-first'>
       <navigator url="/pages/about/about" navigateTo="true" hover-class='none'>
         <view class="nav-item">
-          <image src='/images/n1.jpg'></image>
+          <image src='http://ai.ra120.com/resource/mini-program/renai/images/n1.jpg'></image>
           <text>医院简介</text>
         </view>
       </navigator>
       <navigator url="/pages/zjtd/zjtd" navigateTo="true" hover-class='none'>
         <view class="nav-item">
-          <image src='/images/n2.jpg'></image>
+          <image src='http://ai.ra120.com/resource/mini-program/renai/images/n2.jpg'></image>
           <text>专家团队</text>
         </view>
       </navigator>
       <navigator url="/pages/yyhj/yyhj" navigateTo="true" hover-class='none'>
         <view class="nav-item">
-          <image src='/images/n3.jpg'></image>
+          <image src='http://ai.ra120.com/resource/mini-program/renai/images/n3.jpg'></image>
           <text>环境介绍</text>
         </view>
       </navigator>
       <navigator url="/pages/gfdt/gfdt" navigateTo="true" hover-class='none'>
         <view class="nav-item num">
-          <image src='/images/n4.jpg'></image>
+          <image src='http://ai.ra120.com/resource/mini-program/renai/images/n4.jpg'></image>
           <text>官方动态</text>
         </view>
         <view>
@@ -32,25 +32,25 @@
     <view class="nav-last">
       <button open-type="contact" hover-class='none'>
         <view class="nav-item">
-          <image src='/images/n5.jpg'></image>
+          <image src='http://ai.ra120.com/resource/mini-program/renai/images/n5.jpg'></image>
           <text>病情咨询</text>
         </view>
       </button>
       <navigator url="/pages/yuyue/yuyue" navigateTo="true" hover-class='none'>
         <view class="nav-item">
-          <image src='/images/n6.jpg'></image>
+          <image src='http://ai.ra120.com/resource/mini-program/renai/images/n6.jpg'></image>
           <text>预约挂号</text>
         </view>
       </navigator>
       <navigator url="/pages/lylx/lylx" navigateTo="true" hover-class='none'>
         <view class="nav-item">
-          <image src='/images/n7.jpg'></image>
+          <image src='http://ai.ra120.com/resource/mini-program/renai/images/n7.jpg'></image>
           <text>来院路线</text>
         </view>
       </navigator>
       <button open-type="contact" hover-class='none'>
         <view class="nav-item">
-          <image src='/images/n8.jpg'></image>
+          <image src='http://ai.ra120.com/resource/mini-program/renai/images/n8.jpg'></image>
           <text>了解更多</text>
         </view>
       </button>

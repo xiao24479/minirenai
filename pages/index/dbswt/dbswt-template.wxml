@@ -1,16 +1,21 @@
 <template name="dbswtTemplate">
   <view class="dbswt">
     <view class="post">
-      <image src='/images/dbswt.png'></image>
-    </view>
-    <view class="abs">
-      <button open-type='contact' hover-class='none'>
-        <text class="foot-chat">在线咨询</text>
-      </button>
-      <text class='foot-tel' catchtap='freeTell'>电话咨询</text>
-      <navigator url="/pages/about/about" navigateTo="true" hover-class='none'>
-        <text class="foot-yuyue">在线预约</text>
-      </navigator>
+      <image src='http://ai.ra120.com/resource/mini-program/renai/images/dbswt.png'></image>
+      <view class='chat-box'>
+        <button open-type='contact' hover-class='none' class='chat'>
+          <image src='http://ai.ra120.com/resource/mini-program/renai/images/chat-ico.png'></image>
+          <text class="foot-chat">在线咨询</text>
+        </button>
+      </view>
+      <button class='foot-tel' open-type='contact' hover-class='none'>电话咨询</button>
+      <!-- <text class='foot-tel' catchtap='freeTell'>电话咨询</text> -->
+      <view class='order-box'>
+        <navigator url="/pages/yuyue/yuyue" navigateTo="true" hover-class='none' class='order'>
+          <image src='http://ai.ra120.com/resource/mini-program/renai/images/order-ico.png'></image>
+          <text class="foot-yuyue" class='foot-order'>在线预约</text>
+        </navigator>
+      </view>
     </view>
   </view>
 </template>

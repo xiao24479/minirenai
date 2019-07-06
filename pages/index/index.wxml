@@ -18,32 +18,18 @@
         <view class="leftline"></view>
         <text class="title-text">官方动态</text>
       </view>
-      <text class="more">查看更多></text>
+      <navigator class="more" url="/pages/gfdt/gfdt">查看更多></navigator>
     </view>
     <view class="article">
-      <view class="art-item-first">
-        <image src="/images/dt.jpg"></image>
-        <view>
-          <text class="art-title">一直活跃在健康公益服务的前列线。...</text>
-          <text class="reading">89阅读</text>
-          <text class="reading">04月02日 16:04</text>
-        </view>
+  
+      <view class="art-item" wx:for="{{news}}" wx:key="unique">
+        <navigator url="/pages/gfdt/gfdt-detail/gfdt-detail?aid={{item.id}}" hover-class='none'>
+          <text class="art-title">{{item.title}}</text>
+          <text class="reading">{{item.views}}阅读</text>
+          <text class="reading">{{item.add_time}}</text>
+        </navigator>
       </view>
-      <view class="art-item">
-        <text class="art-title">温州五马医院携手郭公山“红色爱吧”开展关爱</text>
-        <text class="reading">163阅读</text>
-        <text class="reading">04月02日 16:04</text>
-      </view>
-      <view class="art-item">
-        <text class="art-title">温州五马医院“携手抗艾 重在预防”荧光夜跑活</text>
-        <text class="reading">110阅读</text>
-        <text class="reading">04月02日 16:04</text>
-      </view>
-      <view class="art-item">
-        <text class="art-title">温州五马医院志愿者参加“无偿献血 积德行善”</text>
-        <text class="reading">188阅读</text>
-        <text class="reading">04月02日 16:04</text>
-      </view>
+
     </view>
   </view>
   <view class="bgline"></view>
@@ -56,16 +42,16 @@
       <text class="more">查看更多></text>
     </view>
     <view class="story">
-      <text bindtap='aboutTap'>温州五马医院位于著名历史文化商业圈五马街口，创建于2003年，是一所集预防、医疗、保健、康复为一体的现代化综合性医保定点医院，生育保险定点单位。医院先后被授予“全国百姓放心医院”、“浙江省青年志愿者助残先进单位”、...<text class="details">【详情】</text>
+      <text bindtap='aboutTap'>深圳仁爱医院是于1997年经深圳市卫生局批准设立的现代化综合性医院，1998年12月4日，全国人大常委会副委员长、著名医学专家吴阶平教授亲临视察，为“深圳仁爱医院”题写院名。深圳仁爱医院是经深圳市社会保险基金管理局批准...<text class="details">【详情】</text>
       </text>
-      <image src="/images/yyjj1.png"></image>
+      <image src="http://ai.ra120.com/resource/mini-program/renai/images/yyjj1.png"></image>
     </view>
   </view>
   <view class='bgline'></view>
   <view class='yyhj'>
-    <image src='/images/yyhj.jpg'></image>
+    <image src='http://ai.ra120.com/resource/mini-program/renai/images/yyhj.jpg'></image>
   </view>
   <template is="footerTemplate"></template>
   <template is="dbswtTemplate"></template>
-  <template is="swtcenterTemplate" data="{{swtbgshow, num2, num3, num4}}"></template>
+  <template is="swtcenterTemplate" data="{{showPop, num2, num3, num4}}"></template>
 </view>

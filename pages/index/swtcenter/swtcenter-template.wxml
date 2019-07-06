@@ -1,21 +1,21 @@
 <template name="swtcenterTemplate">
-  <view class="swtbg" wx:if="{{swtbgshow}}">
+  <view class="swtbg" wx:if="{{showPop}}">
     <view class="swtcenter">
       <view catchtap='swtCenterClose' class="swtclose">
-        <image src='/images/swtclose.png'></image>
+        <image src='http://ai.ra120.com/resource/mini-program/renai/images/swtclose.png'></image>
       </view>
       <view class='h3'>深圳仁爱医院</view>
       <view class="doctor">
         <view class="bulletin">
           <swiper catchtap="onSwiperTap" indicator-dots="{{false}}" circular="{{true}}" autoplay="{{true}}" interval="2000">
             <swiper-item>
-              <image src="/images/doctor1.jpg"></image>
+              <image src="http://ai.ra120.com/resource/mini-program/renai/images/doctor1.jpg"></image>
             </swiper-item>
             <swiper-item>
-              <image src="/images/doctor2.jpg"></image>
+              <image src="http://ai.ra120.com/resource/mini-program/renai/images/doctor2.jpg"></image>
             </swiper-item>
             <swiper-item>
-              <image src="/images/doctor3.jpg"></image>
+              <image src="http://ai.ra120.com/resource/mini-program/renai/images/doctor3.jpg"></image>
             </swiper-item>
           </swiper>
         </view>
@@ -50,7 +50,7 @@
       </view>
       </button>
       <view class="db_btn">
-      <button open-type='contact' hover-class='none'><image class="d_btn" src='/images/zxbutton.gif'></image></button>
+      <button open-type='contact' hover-class='none'><image class="d_btn" src='http://ai.ra120.com/resource/mini-program/renai/images/zxbutton.gif'></image></button>
       </view>
       <text catchtap='swtCenterClose' class="swt-close">先看一下，等会再说</text>
     </view>
